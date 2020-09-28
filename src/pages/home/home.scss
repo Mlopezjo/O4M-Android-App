@@ -1,0 +1,16 @@
+page-home {
+    .scroll-content, .cnxF{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #212121;
+    }
+    .img-default{
+        margin-bottom: 20px;
+    }
+    .cnxF, .img-default{
+        background: transparent;
+    }
+    .cnxF button{margin-top: 20px;}
+}

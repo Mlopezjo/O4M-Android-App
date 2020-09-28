@@ -1,0 +1,7 @@
+{
+  "name": "O4M_APP",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

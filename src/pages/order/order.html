@@ -1,0 +1,58 @@
+<!--
+  Generated template for the OrderListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="8" class="center">
+          <img class="img-default" width="32px" height="32px" src="../assets/imgs/o4m.png">
+        </ion-col>
+        <ion-col size="4" class="end">
+          <button ion-button type="button" (click)="decnx()" color="secondary">
+            <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title text-center>Commande N°120</ion-card-title>
+      <h4 text-center>{{order.status}}</h4>
+    </ion-card-header>
+    <h2 text-center>Détail :</h2>
+    <ion-list>
+      <button ion-item 
+      *ngFor="let product of order.line_items"
+      (click)="afficheProduit()">
+        <ion-grid>
+          <ion-row text-center>
+            <ion-col size="4">{{product.name}}</ion-col>
+            <ion-col size="4">{{product.quantity}}</ion-col>
+            <ion-col size="4">{{product.total}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+      
+    </ion-list>
+      <ion-grid>
+        <ion-row text-center>
+          <ion-col size="6">Total : </ion-col>
+          <ion-col size="6">{{order.total}} {{order.currency}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    
+    
+  </ion-card>
+    
+    
+</ion-content>

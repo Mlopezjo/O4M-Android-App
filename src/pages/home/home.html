@@ -1,0 +1,16 @@
+<ion-content padding>
+    <img class="img-default" src="../assets/imgs/o4m.png">
+    <form class="cnxF" (ngSubmit)="onLogin()">
+      <ion-item>
+        <ion-input type="text" placeholder="Login"
+        [(ngModel)]="user.login" name="login"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="password" placeholder="Mot de passe"
+        [(ngModel)]="user.mdp" name="mdp"></ion-input>
+      </ion-item> 
+      <button ion-button type="submit" color="secondary" full round>Connexion</button>
+      
+    </form>
+    <button ion-button (click)="afficheListeCommande()">Voir Page Liste Commande</button>
+</ion-content>

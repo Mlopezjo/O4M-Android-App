@@ -1,0 +1,13 @@
+page-order-list {
+    $bgHeader: #212121;
+    .center{
+        display : flex; 
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+    }
+    .end{
+        display : flex; 
+        justify-content: flex-end;
+    }
+}
